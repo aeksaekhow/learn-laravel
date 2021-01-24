@@ -7,11 +7,29 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Posty</title>
 </head>
-<body>
-    <div class="container">
-        <div class="content">
-            @yield('content')
-        </div>
-    </div>
+<body class="bg-gray-200">
+    <nav class="p-6 bg-white flex justify-between mb-6">
+        <ul class="flex items-center">
+            <li><a href="" class="p-3">Home</a></li>
+            <li><a href="" class="p-3">Dashboard</a></li>
+            <li><a href="" class="p-3">Post</a></li>
+        </ul>
+
+        <ul class="flex items-center">
+            <li>
+                <a href="" class="p-3">Alex Garrett-Smith</a>
+            </li>
+            <li>
+                <a href="" class="p-3">Login</a>
+            </li>
+            <li>
+                <a href="{{ route('register') }}" class="p-3">Register</a>
+            </li>
+            <li>
+                <a href="" class="p-3">Layout</a>
+            </li>
+        </ul>
+    </nav>
+    @yield('content')
 </body>
 </html>
