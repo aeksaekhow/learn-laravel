@@ -16,8 +16,10 @@ use App\Http\Controllers;
 
 Route::get('/', function () {
     return view('welcome');
-    //return 'Hello World';
-    //return [ 'foo' => 'bar' ];
+});
+
+Route::get('/contact', function() {
+    return view('contact');
 });
 
 Route::get('/greeting', function() {
