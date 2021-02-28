@@ -24,4 +24,5 @@ Route::get('/about', function() {
     ]);
 });
 
+Route::get('/articles', [Controllers\ArticlesController::class, 'index']);
 Route::get('/articles/{article}', [Controllers\ArticlesController::class, 'show']);
